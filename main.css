@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: blanchedalmond;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+textarea,button{
+    font-family: inherit;
+
+}
+.container{
+    width:50vw;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.172);
+    height: 35vw;
+
+}
+h1{
+    padding: 20px 0;
+    color: #090909;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+.copy_area{
+    width:100%;
+    height: 230px;
+    margin:20px 0;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid #52565e;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    resize: none;
+    border-radius: 10px;
+
+}
+.clear_btn{
+    padding: 10px 15px;
+    color: #f3f4f7;
+    background-color: #037ef3;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.copy_btn{
+    padding: 10px 15px;
+    color: #f3f4f7;
+    background-color: #037ef3;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.clear_btn:active{
+    transform: scale(0.98);
+}
+.clear_btn:hover{
+    background-color: #037ff3bc;
+}
+.copy_btn:active{
+    transform: scale(0.98);
+}
+.copy_btn:hover{
+    background-color: #037ff3bc;
+}
+.copied{
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    color: #858585;
+    transition: all 0.5s;
+    font-size: 26px;
+    transform: scale(0);
+}
+.bounce_effect{
+    animation: bounceIn 0.8s linear;
+}
+/* bounce in animation*/
+@keyframes bounceIn{
+    0%{opacity: 0;
+    transform: scale(0.3);}
+    20%{
+        transform: scale(1.1);
+    }
+    40%{
+        transform: scale(0.9);
+    }
+    60%{
+        opacity: 1;
+        transform: scale(1.03);
+    }
+    80%{
+        transform: scale(0.97);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
